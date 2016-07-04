@@ -1,0 +1,12 @@
+*~
+*.sc
+.DS_Store
+target/
+.project
+.idea*
+.history
+/project.plugins/project
+ca.log
+reports/
+clones/
+*.iml
