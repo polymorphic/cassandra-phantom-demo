@@ -5,11 +5,11 @@ import com.websudos.phantom.sbt.PhantomSbtPlugin
 lazy val commonSettings = Seq(
   organization := "com.microworkflow"
   , scalaVersion := "2.11.8"
-  , version := "0.0.1-SNAPSHOT"
+  , version := "0.0.2-SNAPSHOT"
   , resolvers ++= Seq("Websudos releases" at "https://dl.bintray.com/websudos/oss-releases/")
   , libraryDependencies ++= {
-    val akkaVersion = "2.4.2"
-    val phantomVersion = "1.25.4" // http://outworkers.github.io/phantom/
+    val akkaVersion = "2.4.12"
+    val phantomVersion = "1.29.5" // http://outworkers.github.io/phantom/
     Seq("com.github.nscala-time" %% "nscala-time" % "2.12.0"
       , "com.typesafe.akka" %% "akka-actor" % akkaVersion
       , "com.typesafe.akka" %% "akka-testkit" % akkaVersion

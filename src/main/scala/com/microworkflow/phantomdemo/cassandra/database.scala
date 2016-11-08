@@ -6,7 +6,7 @@ import com.websudos.phantom.dsl._
 /**
   * Created by dam on 6/28/16.
   */
-class SensorDatabase(override val connector: KeySpaceDef) extends Database(connector) {
+class SensorDatabase(override val connector: KeySpaceDef) extends Database[SensorDatabase](connector) {
 
   object sensorReadingTable extends ConcreteSensorReadingTable with connector.Connector
 }
